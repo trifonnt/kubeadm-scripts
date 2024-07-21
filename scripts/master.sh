@@ -12,7 +12,7 @@ POD_CIDR="192.168.0.0/16"
 
 # Pull required images
 
-sudo kubeadm config images pull
+sudo kubeadm config images pull --cri-socket=unix:///var/run/crio/crio.sock
 
 # Initialize kubeadm based on PUBLIC_IP_ACCESS
 
